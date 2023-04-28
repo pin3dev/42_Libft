@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivbatist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/26 00:56:44 by ivbatist          #+#    #+#             */
-/*   Updated: 2022/11/26 00:57:00 by ivbatist         ###   ########.fr       */
+/*   Created: xxxx/xx/xx xx:xx:xx by ivbatist          #+#    #+#             */
+/*   Updated: xxxx/xx/xx xx:xx:xx by ivbatist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,3 +56,30 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
+/*
+#include<stdio.h>
+#include<limits.h>
+int main()
+{
+    int n = 0;
+
+    printf("Int: %d  |  Char: %s\n", n, ft_itoa(n));
+
+    n = -5578;
+
+    printf("Int: %d  |  Char: %s\n", n, ft_itoa(n));
+
+    n = 186;
+
+    printf("Int: %d  |  Char: %s\n", n, ft_itoa(n));
+    
+    n = INT_MIN;
+
+    printf("Int: %d  |  Char: %s\n", n, ft_itoa(n));
+
+    n = INT_MAX;
+
+    printf("Int: %d  |  Char: %s\n", n, ft_itoa(n));
+
+    return 0;
+}*/

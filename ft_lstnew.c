@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivbatist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/26 00:57:25 by ivbatist          #+#    #+#             */
-/*   Updated: 2022/11/26 00:57:43 by ivbatist         ###   ########.fr       */
+/*   Created: xxxx/xx/xx xx:xx:xx by ivbatist          #+#    #+#             */
+/*   Updated: xxxx/xx/xx xx:xx:xx by ivbatist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ t_list	*ft_lstnew(void *content)
 	}
 	return (new);
 }
+/*
+int		main()
+{
+	char	str[] = "lorem ipsum dolor sit";
+	t_list	*elem;
+
+	elem = ft_lstnew((void *)str);
+	printf("%s\n", (char *)elem->content);
+}*/

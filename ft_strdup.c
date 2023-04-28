@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivbatist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/26 00:43:11 by ivbatist          #+#    #+#             */
-/*   Updated: 2022/11/26 00:43:46 by ivbatist         ###   ########.fr       */
+/*   Created: xxxx/xx/xx xx:xx:xx by ivbatist          #+#    #+#             */
+/*   Updated: xxxx/xx/xx xx:xx:xx by ivbatist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,24 @@ char	*ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
+/*
+#include<string.h>
+#include<stdio.h>
+int main()
+{  
+    char str[] = "dale maluco";
+    printf("string original: %s \n", str);
+    char *copy = ft_strdup(str);
+    int size = strlen(copy);
+    printf("string copiada pelo ft: %s \n", copy);
+    printf("tamanho da string copiada pelo ft: %d \n", size);
+
+    free(copy);
+
+    copy = strdup(str);
+    size = strlen(copy);
+    printf("string copiada pela função: %s \n", copy);
+    printf("tamanho da string copiada pela função: %d \n", size);
+
+    return 0;
+}*/

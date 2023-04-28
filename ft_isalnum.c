@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivbatist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/08 20:40:53 by ivbatist          #+#    #+#             */
-/*   Updated: 2022/11/12 17:36:37 by ivbatist         ###   ########.fr       */
+/*   Created: xxxx/xx/xx xx:xx:xx by ivbatist          #+#    #+#             */
+/*   Updated: xxxx/xx/xx xx:xx:xx by ivbatist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -29,18 +29,18 @@ int	main(void)
 	char c;
 
 	c = 'b';
-	printf("o caracter e um alnum? %d \n",ft_isalnum(c));
+	printf("o caracter %c e um alnum? %d \n", c, ft_isalnum(c));
 	c = 'w';
-	printf("o caracter e um alnum? %d \n",ft_isalnum(c));
+	printf("o caracter %c e um alnum? %d \n", c, ft_isalnum(c));
 	c = 'C';
-	printf("o caracter e um alnum? %d \n",ft_isalnum(c));
+	printf("o caracter %c e um alnum? %d \n", c, ft_isalnum(c));
 	c = 'y';
-	printf("o caracter e um alnum? %d \n",ft_isalnum(c));
+	printf("o caracter %c e um alnum? %d \n", c, ft_isalnum(c));
 	c = '3';
-	printf("o caracter e um alnum? %d \n",ft_isalnum(c));
+	printf("o caracter %c e um alnum? %d \n", c, ft_isalnum(c));
 	c = '+';
-	printf("o caracter e um alnum? %d \n",ft_isalnum(c));
+	printf("o caracter %c e um alnum? %d \n", c, ft_isalnum(c));
 	c = '-';
-	printf("o caracter e um alnum? %d \n",ft_isalnum(c));
+	printf("o caracter %c e um alnum? %d \n", c, ft_isalnum(c));
 	return(0);
 }*/

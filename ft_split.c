@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivbatist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/26 00:56:08 by ivbatist          #+#    #+#             */
-/*   Updated: 2022/11/26 00:56:27 by ivbatist         ###   ########.fr       */
+/*   Created: xxxx/xx/xx xx:xx:xx by ivbatist          #+#    #+#             */
+/*   Updated: xxxx/xx/xx xx:xx:xx by ivbatist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,3 +73,19 @@ char	**ft_split(char const *s, char c)
 	str[j] = 0;
 	return (str);
 }
+/*
+#include<stdio.h>
+int        main(void)
+{
+    char str[20] = "Deu Certo, Maluco!!";
+    char **split = ft_split(str);
+
+    int i = 0;
+
+    while(i < 4)
+    {
+        printf("string 0%d: %s \n", i, split[i]);
+        i++;
+    }
+    return (0);
+}*/

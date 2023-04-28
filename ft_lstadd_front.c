@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivbatist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/26 00:59:34 by ivbatist          #+#    #+#             */
-/*   Updated: 2022/11/26 00:59:49 by ivbatist         ###   ########.fr       */
+/*   Created: xxxx/xx/xx xx:xx:xx by ivbatist          #+#    #+#             */
+/*   Updated: 2023/04/28 15:54:35 by ivbatist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,46 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
+/*
+int        main()
+{
+    //Criação dos nós
+    t_list *no1;
+    no1 = malloc(sizeof(t_list));
+    no1->next = NULL;
+    no1->content = "primeiro";
+    
+    t_list *no2;
+    no2 = malloc(sizeof(t_list));
+    no2->next = NULL;
+    no2->content = "segundo";
+    
+    t_list *no_novo;
+    no_novo = malloc(sizeof(t_list));
+    no_novo->next = NULL;
+    no_novo->content = "novo";
+    
+    // Criação da lista encadeada
+    t_list *head = no1;
+    no1->next = no2;
+
+    // Impressão do conteúdo da lista original
+    printf("Lista original:\n");
+    t_list *i = head; 
+    while(i != 0)
+    {
+      printf("%s\n",(char*) i->content);
+      i = i->next;
+    }
+
+    ft_lstadd_front(&head, no_novo);
+    
+    // Adição de um novo nó no início da lista
+    printf("Lista original:\n");
+    i = head; 
+    while(i != 0)
+    {
+      printf("%s\n", (char*) i->content);
+      i = i->next;
+    }
+}*/

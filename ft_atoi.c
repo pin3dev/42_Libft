@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivbatist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/26 00:44:24 by ivbatist          #+#    #+#             */
-/*   Updated: 2022/11/26 00:44:45 by ivbatist         ###   ########.fr       */
+/*   Created: xxxx/xx/xx xx:xx:xx by ivbatist          #+#    #+#             */
+/*   Updated: xxxx/xx/xx xx:xx:xx by ivbatist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,18 @@ int	ft_atoi(const char *str)
 	}
 	return (ret);
 }
+/*
+#include<stdlib.h>
+#include<stdio.h>
+int main()
+{
+    const char str[] = "+1583";
+
+    printf("inteiro pela ft: %i \n", ft_atoi(str));
+    printf("inteiro pela função: %i \n", atoi(str));
+    
+    const char str2[] = "-1583";
+
+    printf("inteiro pela ft: %i \n", ft_atoi(str2));
+    printf("inteiro pela função: %i \n", atoi(str2));
+}*/
