@@ -112,13 +112,3 @@ $(NAME): $(OBJS_MAND)
 ################################################################################
 
 .PHONY: all clean fclean re bonus
-
-
-# https://medium.com/@meghamohan/all-about-static-libraries-in-c-cea57990c495
-# https://www.linkedin.com/pulse/static-libraries-c-ignacio-chitnisky/
-# https://dev.to/iamkhalil42/all-you-need-to-know-about-c-static-libraries-1o0b
-# https://medium.com/@Miguel_Grillo/what-is-a-static-library-in-c-1a7502ca8f7d
-# https://msoe.us/taylor/tutorial/ce2810/library.htm
-# https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_C_libraries.html
-# https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-ar-create-maintain-library-archives
-# https://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html
