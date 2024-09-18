@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:18:21 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 22:20:00 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if ((c >= 0x41 && c <= 0x5a))
-	{
+	if (c >= 65 && c <= 90)
 		return (c + 32);
-	}
 	return (c);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	char c;
-
-	c = 'b';
-	printf("o char [%c] tranformado por ft_tolower fica: %c \n",c, ft_tolower(c));
-	printf("o char [%c] tranformado por tolower fica: %c \n",c, tolower(c));
-	c = 'G';
-	printf("o char [%c] tranformado por ft_tolower fica: %c \n",c, ft_tolower(c));
-	printf("o char [%c] tranformado por tolower fica: %c \n",c, tolower(c));
-}*/

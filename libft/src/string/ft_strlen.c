@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:16:35 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 22:01:22 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,10 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t	cont;
+	size_t	len;
 
-	cont = 0;
-	while (str[cont] != '\0')
-	{
-		cont++;
-	}
-	return (cont);
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char	str[30] = "TACA A MAE PRA VER SE QUICA";
-
-	printf("string: %s\n", str);
-	printf("strlen: %lu\n", strlen(str));
-	printf("ft_strlen: %lu\n", ft_strlen(str));
-}*/

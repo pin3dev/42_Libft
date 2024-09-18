@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:17:48 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 22:09:15 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	unsigned int		i;
 	unsigned int		a;
 
-	i = start;
-	a = 0;
 	if (!s)
 		return (NULL);
+	i = start;
+	a = 0;
 	if (start > ft_strlen(s))
 	{
 		string = malloc(1 * sizeof(char));

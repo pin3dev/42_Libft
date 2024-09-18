@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:17:24 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 21:51:47 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	size_t	cont;
-
-	cont = 0;
-	while (str[cont] != '\0' && str[cont] != (unsigned char)c)
+	while (*str != '\0')
 	{
-		cont++;
+		if (*str == (char)c)
+			return ((char *)str);
+		str++;
 	}
-	if (str[cont] == (unsigned char)c)
-	{
-		return ((char *) &str[cont]);
-	}
-	return (0);
+	if (*str == (char)c)
+		return ((char *)str);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:18:01 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 22:15:38 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,7 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	{
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 		return (1024);
-	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	char c;
-
-	c = 'b';
-	printf("o caracter e um alnum? %d \n",ft_isalpha(c));
-	c = 'w';
-	printf("o caracter e um alnum? %d \n",ft_isalpha(c));
-	c = 'C';
-	printf("o caracter e um alnum? %d \n",ft_isalpha(c));
-	c = 'y';
-	printf("o caracter e um alnum? %d \n",ft_isalpha(c));
-	c = '3';
-	printf("o caracter e um alnum? %d \n",ft_isalpha(c));
-	c = '+';
-	printf("o caracter e um alnum? %d \n",ft_isalpha(c));
-	c = '-';
-	printf("o caracter e um alnum? %d \n",ft_isalpha(c));
-	return(0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 16:47:56 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 22:09:59 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,15 @@
 
 void	*ft_calloc(size_t nitems, size_t size)
 {
-	char			*arra;
-	size_t			i;
-	unsigned int	total;
+	char	*arra;
+	size_t	total;
 
 	total = nitems * size;
-	arra = malloc(nitems * size);
-	if (arra == NULL)
+	arra = malloc(total);
+	if (!arra)
 		return (NULL);
-	i = 0;
-	while (total > 0)
-	{
-		arra[i] = 0;
-		total--;
-		i++;
-	}
+
+	ft_memset(arra, 0, total);
+
 	return ((void *)arra);
 }

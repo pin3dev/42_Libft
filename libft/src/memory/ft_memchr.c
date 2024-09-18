@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:17:03 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 21:45:51 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,14 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
-	int	cont;
-
-	cont = 0;
-	while (n > 0)
+	const unsigned char	*ptr;
+	
+	ptr = (const unsigned char *)str;
+	while (n--)
 	{
-		if (((unsigned char *) str)[cont] == (unsigned char)c)
-			return ((unsigned char *)str + cont);
-		cont++;
-		n--;
+		if (*ptr == (unsigned char)c)
+			return (void *)ptr;
+		ptr++;
 	}
 	return (NULL);
 }

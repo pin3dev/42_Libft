@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 12:18:53 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 21:47:29 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,23 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	size_t	cont;
+	unsigned char	*mem_dst;
+	const unsigned char	*mem_src;
 
 	if (!dst && !src)
+		return (NULL);
+
+	mem_dst = (unsigned char *)dst;
+	mem_src = (const unsigned char *)src;
+	if (mem_dst > mem_src && mem_dst < mem_src + n)
 	{
-		return (0);
-	}
-	cont = 0;
-	if (((size_t)dst) - ((size_t)src) < n)
-	{
-		cont = n - 1;
-		while (cont < n)
-		{
-			((unsigned char *)dst)[cont] = ((unsigned char *)src)[cont];
-			cont--;
-		}
+		while (n--)
+			mem_dst[n] = mem_src[n];
 	}
 	else
 	{
-		while (cont < n)
-		{
-			((unsigned char *)dst)[cont] = ((unsigned char *)src)[cont];
-			cont++;
-		}
+		while (n--)
+			*mem_dst++ = *mem_src++;
 	}
 	return (dst);
 }

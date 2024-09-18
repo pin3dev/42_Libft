@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:17:13 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 21:45:02 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,16 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
+	if (!src && !dest)
+		return (NULL);
+
 	unsigned char	*mem_src;
 	unsigned char	*mem_dest;
-	size_t			i;
 
-	if (src == NULL && dest == NULL)
-		return (dest);
 	mem_src = (unsigned char *)src;
 	mem_dest = (unsigned char *)dest;
-	i = 0;
-	while (i < len)
-	{
-		mem_dest[i] = mem_src[i];
-		i++;
-	}
-	return (mem_dest);
+	while (len--)
+		*mem_dest++ = *mem_src++;
+
+	return (dest);
 }

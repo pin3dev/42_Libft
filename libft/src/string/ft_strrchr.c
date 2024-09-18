@@ -6,7 +6,7 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 13:16:47 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/18 22:06:19 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + len);
 	while (len >= 0)
 	{
-		if (s[len] == c)
-			return (((char *)s) + len);
+		if (s[len] == (char)c)
+			return ((char *)s + len);
 		len--;
 	}
-	return (0);
+	return (NULL);
 }
