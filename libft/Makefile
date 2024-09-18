@@ -6,7 +6,7 @@
 #    By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 13:11:36 by pin3dev           #+#    #+#              #
-#    Updated: 2024/09/18 23:23:48 by pin3dev          ###   ########.fr        #
+#    Updated: 2024/09/18 23:32:56 by pin3dev          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror -I inc
 AR = ar rcs
 RM = rm -f
-RMD = rm -r
+RMD = rm -rf
 
 ################################################################################
 # 							Dir	Path	Variables 							   #
@@ -71,12 +71,13 @@ clean:
 fclean: clean
 	@$(RM) $(NAME)
 	@echo "$(NAME) removed"
-	@cd ../libft-unit-tests && make fclean
+	@if [ -d "../libft-unit-tests" ]; then cd ../libft-unit-tests && make fclean; fi
+	@if [ -d "../libft-unit-tests" ]; then $(RMD) "../libft-unit-tests"; fi
 
 re: fclean all
 
 ################################################################################
-# 					Tests	Targets	by @alelievr	 						   #
+# 						Test Targets by @alelievr	 						   #
 ################################################################################
 
 test: bonus
