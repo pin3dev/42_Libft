@@ -6,7 +6,7 @@
 #    By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 13:11:36 by pin3dev           #+#    #+#              #
-#    Updated: 2024/09/18 19:06:39 by pin3dev          ###   ########.fr        #
+#    Updated: 2024/09/18 23:23:48 by pin3dev          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,9 +71,24 @@ clean:
 fclean: clean
 	@$(RM) $(NAME)
 	@echo "$(NAME) removed"
+	@cd ../libft-unit-tests && make fclean
 
 re: fclean all
-	
+
+################################################################################
+# 					Tests	Targets	by @alelievr	 						   #
+################################################################################
+
+test: bonus
+	@if [ ! -d "../libft-unit-tests" ]; then \
+		echo "Clonando repositório libft-unit-test..."; \
+		git clone https://github.com/alelievr/libft-unit-test ../libft-unit-tests; \
+	else \
+		echo "Diretório libft-unit-tests já existe. Atualizando..."; \
+		cd ../libft-unit-tests && git pull; \
+	fi
+	@cd ../libft-unit-tests && make && sleep 5 && ./run_test || echo "Falha ao executar ./run_test"
+
 
 ################################################################################
 # 							Automatic	Targets  							   #
