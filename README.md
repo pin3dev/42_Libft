@@ -19,7 +19,7 @@ The mandatory part of the project involves reimplementing several standard C lib
 
 | **Function**            | **C Standard Lib** | **Additional** | **String** | **Memory** | **Utils** | **List** |
 |-------------------------|:------------------:|:--------------:|:----------:|:----------:|:---------:|:--------:|
-| `ft_strlen`             | ✓                  |                | ✓          |            |           |          |
+| `ft_strlen`,            | ✓                  |                | ✓          |            |           |          |
 | `ft_strlcpy`            | ✓                  |                | ✓          |            |           |          |
 | `ft_strlcat`            | ✓                  |                | ✓          |            |           |          |
 | `ft_strchr`             | ✓                  |                | ✓          |            |           |          |
@@ -62,7 +62,6 @@ The mandatory part of the project involves reimplementing several standard C lib
 | `ft_lstclear`           |                    | ✓              |            |            |           | ✓        |
 | `ft_lstiter`            |                    | ✓              |            |            |           | ✓        |
 | `ft_lstmap`             |                    | ✓              |            |            |           | ✓        |
-|-------------------------|--------------------|----------------|------------|------------|-----------|----------|
 
 
 ## 🫥 Cloning the Repository
