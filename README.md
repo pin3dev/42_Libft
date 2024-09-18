@@ -17,42 +17,53 @@ The mandatory part of the project involves reimplementing several standard C lib
 
 #### Libc Functions
 
-The following functions from the C standard library have been reimplemented with a `ft_` prefix:
+| **Function**            | **C Standard Lib** | **Additional** | **String** | **Memory** | **Utils** | **List** |
+|-------------------------|:------------------:|:--------------:|:----------:|:----------:|:---------:|:--------:|
+| `ft_strlen`             | ✓                  |                | ✓          |            |           |          |
+| `ft_strlcpy`            | ✓                  |                | ✓          |            |           |          |
+| `ft_strlcat`            | ✓                  |                | ✓          |            |           |          |
+| `ft_strchr`             | ✓                  |                | ✓          |            |           |          |
+| `ft_strrchr`            | ✓                  |                | ✓          |            |           |          |
+| `ft_strncmp`            | ✓                  |                | ✓          |            |           |          |
+| `ft_strnstr`            | ✓                  |                | ✓          |            |           |          |
+| `ft_strdup`             | ✓                  |                | ✓          |            |           |          |
+| `ft_substr`             |                    | ✓              | ✓          |            |           |          |
+| `ft_strjoin`            |                    | ✓              | ✓          |            |           |          |
+| `ft_strtrim`            |                    | ✓              | ✓          |            |           |          |
+| `ft_split`              |                    | ✓              | ✓          |            |           |          |
+| `ft_strmapi`            |                    | ✓              | ✓          |            |           |          |
+| `ft_striteri`           |                    | ✓              | ✓          |            |           |          |
+| `ft_memset`             | ✓                  |                |            | ✓          |           |          |
+| `ft_bzero`              | ✓                  |                |            | ✓          |           |          |
+| `ft_memcpy`             | ✓                  |                |            | ✓          |           |          |
+| `ft_memmove`            | ✓                  |                |            | ✓          |           |          |
+| `ft_memchr`             | ✓                  |                |            | ✓          |           |          |
+| `ft_memcmp`             | ✓                  |                |            | ✓          |           |          |
+| `ft_calloc`             | ✓                  |                |            | ✓          |           |          |
+| `ft_toupper`            | ✓                  |                |            |            | ✓         |          |
+| `ft_tolower`            | ✓                  |                |            |            | ✓         |          |
+| `ft_atoi`               | ✓                  |                |            |            | ✓         |          |
+| `ft_isalpha`            | ✓                  |                |            |            | ✓         |          |
+| `ft_isdigit`            | ✓                  |                |            |            | ✓         |          |
+| `ft_isalnum`            | ✓                  |                |            |            | ✓         |          |
+| `ft_isascii`            | ✓                  |                |            |            | ✓         |          |
+| `ft_isprint`            | ✓                  |                |            |            | ✓         |          |
+| `ft_itoa`               |                    | ✓              |            |            | ✓         |          |
+| `ft_putchar_fd`         |                    | ✓              |            |            | ✓         |          |
+| `ft_putstr_fd`          |                    | ✓              |            |            | ✓         |          |
+| `ft_putendl_fd`         |                    | ✓              |            |            | ✓         |          |
+| `ft_putnbr_fd`          |                    | ✓              |            |            | ✓         |          |
+| `ft_lstnew`             |                    | ✓              |            |            |           | ✓        |
+| `ft_lstadd_front`       |                    | ✓              |            |            |           | ✓        |
+| `ft_lstsize`            |                    | ✓              |            |            |           | ✓        |
+| `ft_lstlast`            |                    | ✓              |            |            |           | ✓        |
+| `ft_lstadd_back`        |                    | ✓              |            |            |           | ✓        |
+| `ft_lstdelone`          |                    | ✓              |            |            |           | ✓        |
+| `ft_lstclear`           |                    | ✓              |            |            |           | ✓        |
+| `ft_lstiter`            |                    | ✓              |            |            |           | ✓        |
+| `ft_lstmap`             |                    | ✓              |            |            |           | ✓        |
+|-------------------------|--------------------|----------------|------------|------------|-----------|----------|
 
-- Character checks: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
-- String operations: `ft_strlen`,  `ft_strlcpy`, `ft_strlcat`
-- Memory operations: `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`
-- Conversions: `ft_toupper`, `ft_tolower`, `ft_atoi`
-- String search: `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`
-- Memory search: `ft_memchr`, `ft_memcmp`
-- Memory allocation: `ft_calloc`, `ft_strdup`
-
-#### Additional Functions
-
-In addition to the Libc functions, the project also includes:
-
-- `ft_substr`: Creates a substring from a string.
-- `ft_strjoin`: Concatenates two strings.
-- `ft_strtrim`: Trims characters from the start and end of a string.
-- `ft_split`: Splits a string into an array using a delimiter.
-- `ft_itoa`: Converts an integer to a string.
-- `ft_strmapi`: Applies a function to each character of a string, returning a new string.
-- `ft_striteri`: Iterates through a string, applying a function to each character.
-- `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`: Output functions.
-
-### Bonus Part
-
-The bonus part of the project involves working with linked lists. The following functions have been implemented to facilitate working with linked lists:
-
-- `ft_lstnew`: Creates a new list node.
-- `ft_lstadd_front`: Adds a node to the beginning of a list.
-- `ft_lstsize`: Returns the number of nodes in a list.
-- `ft_lstlast`: Returns the last node in a list.
-- `ft_lstadd_back`: Adds a node to the end of a list.
-- `ft_lstdelone`: Deletes a node and frees its memory.
-- `ft_lstclear`: Deletes and frees a list.
-- `ft_lstiter`: Iterates through a list and applies a function to each node.
-- `ft_lstmap`: Applies a function to each node of a list, creating a new list.
 
 ## 🫥 Cloning the Repository
 
