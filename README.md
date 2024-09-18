@@ -1,14 +1,83 @@
-# Libft - My very First Own Library
+# Libft Project `125/100`
 
-<details><summary><h2>📖Resume</h2></summary>
-<aside>
-<p align="left"><img src="https://www.notion.so/icons/checkmark_lightgray.svg" alt="https://www.notion.so/icons/checkmark_lightgray.svg" width="20px" /> 
-This C project consists of creating a custom library containing functions that mimic the functionality of the standard C language libraries. The goal is to understand how the standard functions work, implement them, and learn how to use them. The project must be written in C according to established standards, including correct memory allocation and deallocation, and the use of a Makefile to compile the code.  The final goal is to create a complete library that can be used in future C projects.
-</details>
-</aside>
+## Introduction
 
-<details><summary><h2>🗣️Explanation</h2></summary>
-<aside>
+This repository contains a custom C library, **Libft**, implemented as part of a coding project. The project aims to replicate many of the standard library functions in C, as well as implement additional useful functions. The goal is to gain a deeper understanding of the inner workings of these functions and to have a versatile library for use in future C projects.
 
-</details>
-</aside>
+## Project Structure
+
+### Mandatory Part
+
+The mandatory part of the project involves reimplementing several standard C library functions. The functions are divided into two categories: **Libc functions** and **Additional functions**.
+
+#### Libc Functions
+
+The following functions from the C standard library have been reimplemented with a `ft_` prefix:
+
+- Character checks: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
+- String and memory operations: `ft_strlen`, `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_strlcpy`, `ft_strlcat`
+- Case conversions: `ft_toupper`, `ft_tolower`
+- String search: `ft_strchr`, `ft_strrchr`, `ft_strncmp`
+- Memory search: `ft_memchr`, `ft_memcmp`
+- String search with limit: `ft_strnstr`
+- Conversion: `ft_atoi`
+- Memory allocation: `ft_calloc`, `ft_strdup`
+
+#### Additional Functions
+
+In addition to the Libc functions, the project also includes:
+
+- `ft_substr`: Creates a substring from a string.
+- `ft_strjoin`: Concatenates two strings.
+- `ft_strtrim`: Trims characters from the start and end of a string.
+- `ft_split`: Splits a string into an array using a delimiter.
+- `ft_itoa`: Converts an integer to a string.
+- `ft_strmapi`: Applies a function to each character of a string, returning a new string.
+- `ft_striteri`: Iterates through a string, applying a function to each character.
+- Output functions: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
+
+### Bonus Part
+
+The bonus part of the project involves working with linked lists. The following functions have been implemented to facilitate working with linked lists:
+
+- `ft_lstnew`: Creates a new list node.
+- `ft_lstadd_front`: Adds a node to the beginning of a list.
+- `ft_lstsize`: Returns the number of nodes in a list.
+- `ft_lstlast`: Returns the last node in a list.
+- `ft_lstadd_back`: Adds a node to the end of a list.
+- `ft_lstdelone`: Deletes a node and frees its memory.
+- `ft_lstclear`: Deletes and frees a list.
+- `ft_lstiter`: Iterates through a list and applies a function to each node.
+- `ft_lstmap`: Applies a function to each node of a list, creating a new list.
+
+## Compilation and Usage
+
+### Makefile
+
+A `Makefile` is provided to automate the compilation process. The Makefile includes the following rules:
+
+- `all`: Compiles the library (`libft.a`).
+- `clean`: Removes object files.
+- `fclean`: Removes object files and the library (`libft.a`).
+- `re`: Recompiles the entire project.
+- `bonus`: Compiles the bonus part of the project.
+
+To compile the library, simply run:
+```bash
+make
+```
+
+To compile the bonus part, use:
+```bash
+make bonus
+```
+
+## Norms and Guidelines
+
+The project is implemented according to the following rules:
+
+- The code adheres to the **42 Norm** guidelines.
+- No memory leaks or undefined behaviors (e.g., segmentation faults, double free errors) are tolerated.
+- All memory allocation is handled appropriately, and memory is freed when necessary.
+- A static function approach is used for helper functions.
+- No global variables are allowed.
