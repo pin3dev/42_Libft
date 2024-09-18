@@ -2,7 +2,12 @@
 
 ## ℹ️ Introduction
 
-This repository contains a custom C library, **Libft**, implemented as part of a coding project. The project aims to replicate many of the standard library functions in C, as well as implement additional useful functions. The goal is to gain a deeper understanding of the inner workings of these functions and to have a versatile library for use in future C projects.
+This repository contains a custom C library, **Libft**, implemented as part of a coding project.  
+
+The objective of the project is to create a **static library** (`.a` file) in C that reimplements many of the standard library functions, as well as additional useful functions.  
+
+A static library is a collection of object files that are linked directly into the final executable at compile time.  
+The goal is to gain a deeper understanding of how these functions work internally and to provide a versatile library that can be reused in future C projects without relying on external dependencies.  
 
 ## 🧬 Project Structure
 
