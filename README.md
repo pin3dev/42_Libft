@@ -15,12 +15,11 @@ The mandatory part of the project involves reimplementing several standard C lib
 The following functions from the C standard library have been reimplemented with a `ft_` prefix:
 
 - Character checks: `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`
-- String and memory operations: `ft_strlen`, `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_strlcpy`, `ft_strlcat`
-- Case conversions: `ft_toupper`, `ft_tolower`
-- String search: `ft_strchr`, `ft_strrchr`, `ft_strncmp`
+- String operations: `ft_strlen`,  `ft_strlcpy`, `ft_strlcat`
+- Memory operations: `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`
+- Conversions: `ft_toupper`, `ft_tolower`, `ft_atoi`
+- String search: `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`
 - Memory search: `ft_memchr`, `ft_memcmp`
-- String search with limit: `ft_strnstr`
-- Conversion: `ft_atoi`
 - Memory allocation: `ft_calloc`, `ft_strdup`
 
 #### Additional Functions
@@ -34,7 +33,7 @@ In addition to the Libc functions, the project also includes:
 - `ft_itoa`: Converts an integer to a string.
 - `ft_strmapi`: Applies a function to each character of a string, returning a new string.
 - `ft_striteri`: Iterates through a string, applying a function to each character.
-- Output functions: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
+- `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`: Output functions.
 
 ### Bonus Part
 
