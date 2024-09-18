@@ -71,15 +71,18 @@ To compile the bonus part, use:
 make bonus
 ```
 
-## ⚠️ Norms and Guidelines
+## ⚠️ Norms and Guidelines Disclaimer
 
-The project is implemented according to the following rules:
+This project strictly follows the **42 School Norm** coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. Some key constraints include:
 
-- The code adheres to the **42 Norm** guidelines.
-- No memory leaks or undefined behaviors (e.g., segmentation faults, double free errors) are tolerated.
-- All memory allocation is handled appropriately, and memory is freed when necessary.
-- A static function approach is used for helper functions.
-- No global variables are allowed.
+- The use of certain control structures like `for`, `switch`, and `goto` is forbidden.
+- Each function must not exceed **25 lines**, including opening and closing brackets.
+- A maximum of **4 parameters** is allowed per function.
+- **No global variables** are allowed, and function variables must be declared at the start of the function.
+- **Memory management** is critical, and no memory leaks or undefined behaviors (e.g., segmentation faults) are tolerated.
+- Code formatting is highly rigid, with specific rules for indentation, line length, and spacing.
+
+These restrictions are enforced to ensure standardized, readable code across all projects, even if it results in less flexibility or optimization.
 
 ## 📖 Theoretical Background
 | Grade |Lang | Type| Links and Subjects |
