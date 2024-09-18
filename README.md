@@ -1,4 +1,4 @@
-# Libft Project `125/100`
+# Libft `125/100`
 
 ## ℹ️ Introduction
 
