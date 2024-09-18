@@ -49,6 +49,16 @@ The bonus part of the project involves working with linked lists. The following 
 - `ft_lstiter`: Iterates through a list and applies a function to each node.
 - `ft_lstmap`: Applies a function to each node of a list, creating a new list.
 
+## 🫥 Cloning the Repository
+
+To clone this repository and compile the project, run the following commands:
+
+```bash
+git clone https://github.com/pin3dev/42_Libft.git
+cd 42_Libft/libft
+```
+This will download the project from GitHub into your current directory. Once inside the `libft` directory, you must run make to compile the library.  
+
 ## ▶️ Compilation and Usage
 
 ### Makefile
