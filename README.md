@@ -1,10 +1,10 @@
 # Libft Project `125/100`
 
-## Introduction
+## ℹ️ Introduction
 
 This repository contains a custom C library, **Libft**, implemented as part of a coding project. The project aims to replicate many of the standard library functions in C, as well as implement additional useful functions. The goal is to gain a deeper understanding of the inner workings of these functions and to have a versatile library for use in future C projects.
 
-## Project Structure
+## 🧬 Project Structure
 
 ### Mandatory Part
 
@@ -50,7 +50,7 @@ The bonus part of the project involves working with linked lists. The following 
 - `ft_lstiter`: Iterates through a list and applies a function to each node.
 - `ft_lstmap`: Applies a function to each node of a list, creating a new list.
 
-## Compilation and Usage
+## ▶️ Compilation and Usage
 
 ### Makefile
 
@@ -72,7 +72,7 @@ To compile the bonus part, use:
 make bonus
 ```
 
-## Norms and Guidelines
+## ⚠️ Norms and Guidelines
 
 The project is implemented according to the following rules:
 
