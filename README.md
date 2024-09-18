@@ -11,11 +11,13 @@ The goal is to gain a deeper understanding of how these functions work internall
 
 ## 🧬 Project Structure
 
-### Mandatory Part
+The mandatory part of the project involves reimplementing several standard C library functions.  
+These functions are divided into different subcategories, depending on their purpose.  
+The primary categories are **Libc functions** (reimplementations of standard C library functions) and **Additional functions** (new utility functions added to complement the library).  
+Within these categories, the functions can be further grouped based on their operations on **strings**, **memory**, **utility** functions, and **linked lists**.
 
-The mandatory part of the project involves reimplementing several standard C library functions. The functions are divided into two categories: **Libc functions** and **Additional functions**.
+### Libft Functions
 
-#### Libc Functions
 | **Function**                                                                                              | **C Standard Lib** | **Additional** | **String** | **Memory** | **Utils** | **List** |
 |-----------------------------------------------------------------------------------------------------------|:------------------:|:--------------:|:----------:|:----------:|:---------:|:--------:|
 | `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_strdup` | ✓                  |                | ✓          |            |           |          |
@@ -25,6 +27,29 @@ The mandatory part of the project involves reimplementing several standard C lib
 | `ft_itoa`, `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`                                 |                    | ✓              |            |            | ✓         |          |
 | `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap` |                    | ✓              |            |            |           | ✓        |
 
+---
+
+### String Functions
+
+- The functions under the **String** category involve various operations on strings, such as calculating length, copying, concatenating, and searching within strings. 
+- Functions like `ft_strlen`, `ft_strlcpy`, `ft_strlcat`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, and `ft_strdup` reimplement common C standard library functions for working with strings.
+- The **Additional** functions provide further capabilities such as creating substrings (`ft_substr`), joining strings (`ft_strjoin`), trimming characters (`ft_strtrim`), splitting strings (`ft_split`), and applying functions to string characters (`ft_strmapi`, `ft_striteri`).
+
+### Memory Functions
+
+- The **Memory** functions handle operations on memory blocks, such as setting values, copying, and comparing memory areas. 
+- Functions like `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp`, and `ft_calloc` provide the ability to manipulate raw memory, essential for low-level memory management.
+- These functions include reimplementations of common C standard library functions for memory handling, with some responsible for memory allocation (`ft_calloc`).
+
+### Utility Functions
+
+- The **Utility** category includes character classification and conversion functions like `ft_toupper`, `ft_tolower`, `ft_atoi`, `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, and `ft_isprint`. These functions check or modify individual characters or strings based on predefined criteria, like whether a character is alphabetic, a digit, or printable.
+- Additionally, there are **Additional** functions such as integer-to-string conversion (`ft_itoa`) and file descriptor-based output functions (`ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`), which provide flexibility for outputting data to different streams.
+
+### List Functions (Bonus)
+
+- The **List** functions focus on operations involving linked lists, a fundamental data structure in C programming.
+- Functions like `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, and `ft_lstmap` provide the ability to create and manipulate singly linked lists, including adding nodes, traversing the list, and applying functions to elements.
 
 
 ## 🫥 Cloning the Repository
