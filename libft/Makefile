@@ -82,13 +82,11 @@ re: fclean all
 
 test: bonus
 	@if [ ! -d "../libft-unit-tests" ]; then \
-		echo "Clonando repositório libft-unit-test..."; \
 		git clone https://github.com/alelievr/libft-unit-test ../libft-unit-tests; \
 	else \
-		echo "Diretório libft-unit-tests já existe. Atualizando..."; \
 		cd ../libft-unit-tests && git pull; \
 	fi
-	@cd ../libft-unit-tests && make && sleep 5 && ./run_test || echo "Falha ao executar ./run_test"
+	@cd ../libft-unit-tests && make && sleep 5 && ./run_test
 
 
 ################################################################################
