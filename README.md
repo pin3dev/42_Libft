@@ -73,7 +73,7 @@ make bonus
 
 ## ⚠️ Norms and Guidelines Disclaimer
 
-This project strictly follows the **42 School Norm** coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. Some key constraints include:
+This project strictly follows the [**42 School Norm**](https://github.com/pin3dev/42_Cursus/blob/b9cd0fe844ddb441d0b3efb98abcee92aee49535/assets/General/norme.en.pdf) coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. Some key constraints include:
 
 - The use of certain control structures like `for`, `switch`, and `goto` is forbidden.
 - Each function must not exceed **25 lines**, including opening and closing brackets.
