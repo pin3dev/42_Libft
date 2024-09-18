@@ -60,6 +60,7 @@ A `Makefile` is provided to automate the compilation process. The Makefile inclu
 - `fclean`: Removes object files and the library (`libft.a`).
 - `re`: Recompiles the entire project.
 - `bonus`: Compiles the bonus part of the project.
+- `test`: Compiles the bonus part and runs the test written by [@alelievr](https://github.com/alelievr/libft-unit-test)
 
 To compile the library, simply run:
 ```bash
@@ -69,6 +70,11 @@ make
 To compile the bonus part, use:
 ```bash
 make bonus
+```
+
+To compile the bonus part and test, use:
+```bash
+make test
 ```
 
 ## ⚠️ Norms and Guidelines Disclaimer
