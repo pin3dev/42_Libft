@@ -6,12 +6,22 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 12:20:50 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 01:13:54 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+/**
+ * @file libft.h
+ * @brief Header file for the Libft project, containing declarations for a variety of standard C library functions
+ *        as well as linked list utility functions.
+ * 
+ * This header file includes declarations of commonly used functions for string manipulation, memory operations,
+ * and linked list management. These functions are designed to provide alternatives to standard library functions
+ * and additional utilities for working with strings, memory, and linked lists.
+ */
 
 # include <unistd.h>
 # include <stdio.h>
@@ -53,10 +63,13 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 
+/**
+ * @brief Defines a linked list node structure.
+ */
 typedef struct s_list
 {
-	void			*content;
-	struct s_list	*next;
+	void			*content; /**< Pointer to the content of the node. */
+	struct s_list	*next; /**< Pointer to the next node in the list. */
 }					t_list;
 
 t_list	*ft_lstnew(void *content);
@@ -69,4 +82,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-#endif
+#endif /* LIBFT_H */
