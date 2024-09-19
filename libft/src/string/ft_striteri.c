@@ -6,12 +6,27 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 23:01:16 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:52:25 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+
+/**
+ * @brief Applies a function to each character of a string, passing its index.
+ * 
+ * This function iterates over the string `s` and applies the function `f` to each character,
+ * passing both the index of the character and a pointer to it. The function `f` is applied
+ * in order, starting from the first character of the string.
+ * 
+ * @param s The string on which to iterate.
+ * @param f The function to apply to each character, taking its index and a pointer to the character.
+ * 
+ * @note If either `s` or `f` is `NULL`, the function does nothing.
+ * 
+ * @return This function does not return any value.
+ */
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	i;

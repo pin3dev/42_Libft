@@ -6,12 +6,21 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 21:32:10 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:42:59 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Returns the last element of a linked list.
+ * 
+ * This function traverses the linked list to find and return the last element.
+ * 
+ * @param lst A pointer to the first element of the linked list.
+ * 
+ * @return A pointer to the last element of the list, or `NULL` if the list is empty.
+ */
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

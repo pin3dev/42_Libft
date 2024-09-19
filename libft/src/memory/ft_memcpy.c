@@ -6,12 +6,27 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 21:45:02 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:47:38 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Copies memory from one location to another.
+ * 
+ * This function copies `len` bytes from the memory area `src` to the memory area `dest`. 
+ * The memory areas must not overlap. If `src` and `dest` are both `NULL`, the function 
+ * returns `NULL`.
+ * 
+ * @param dest A pointer to the destination memory area.
+ * @param src A pointer to the source memory area.
+ * @param len The number of bytes to copy.
+ * 
+ * @return A pointer to the destination memory area `dest`.
+ * 
+ * @note If both `src` and `dest` are `NULL`, the function returns `NULL`.
+ */
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
 	if (!src && !dest)

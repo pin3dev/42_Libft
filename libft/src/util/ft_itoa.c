@@ -6,12 +6,22 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 22:17:34 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 01:02:24 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Returns the absolute value of an integer.
+ * 
+ * This static helper function returns the absolute value of the integer `nbr`.
+ * If `nbr` is negative, it returns `-nbr`. Otherwise, it returns `nbr`.
+ * 
+ * @param nbr The integer whose absolute value is to be calculated.
+ * 
+ * @return The absolute value of the integer `nbr`.
+ */
 static int	absolute_value(int nbr)
 {
 	if (nbr < 0)
@@ -19,6 +29,16 @@ static int	absolute_value(int nbr)
 	return (nbr);
 }
 
+/**
+ * @brief Calculates the number of characters needed to represent an integer.
+ * 
+ * This static helper function returns the length of the string that would represent the integer `nbr`, 
+ * accounting for the sign if the number is negative.
+ * 
+ * @param nbr The integer whose length is to be calculated.
+ * 
+ * @return The length of the string representation of `nbr`.
+ */
 static int	get_len(int nbr)
 {
 	int	len;
@@ -34,6 +54,17 @@ static int	get_len(int nbr)
 	return (len);
 }
 
+/**
+ * @brief Converts an integer to a string.
+ * 
+ * This function converts the integer `n` to its string representation. It handles negative numbers
+ * and returns a newly allocated string that represents the integer. If memory allocation fails,
+ * the function returns `NULL`.
+ * 
+ * @param n The integer to be converted.
+ * 
+ * @return A pointer to the newly allocated string representing the integer `n`, or `NULL` if memory allocation fails.
+ */
 char	*ft_itoa(int n)
 {
 	char	*result;

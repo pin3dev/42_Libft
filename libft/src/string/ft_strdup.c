@@ -6,12 +6,23 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 22:57:43 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:51:58 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Duplicates a string by allocating new memory.
+ * 
+ * This function creates a new string that is a duplicate of the string `s`.
+ * Memory is allocated to store the duplicate, and the contents of `s` are copied
+ * into the new string, including the null terminator.
+ * 
+ * @param s The string to be duplicated.
+ * 
+ * @return A pointer to the newly allocated string, or `NULL` if memory allocation fails.
+ */
 char	*ft_strdup(const char *s)
 {
 	char	*dest;

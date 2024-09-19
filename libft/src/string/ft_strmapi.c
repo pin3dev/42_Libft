@@ -6,12 +6,24 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 22:58:52 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:54:33 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Applies a function to each character of a string to create a new string.
+ * 
+ * This function creates a new string by applying the function `f` to each character of the string `s`.
+ * The function `f` takes as parameters the index of the character and the character itself. The result
+ * of applying `f` to each character is stored in the new string, which is null-terminated.
+ * 
+ * @param s The input string to be transformed.
+ * @param f The function to apply to each character of `s`, which takes the character's index and the character as arguments.
+ * 
+ * @return A pointer to the newly created string, or `NULL` if memory allocation fails or if `s` or `f` is `NULL`.
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;

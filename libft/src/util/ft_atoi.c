@@ -6,12 +6,26 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 22:14:39 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:59:58 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Converts a string to an integer.
+ * 
+ * This function converts the initial portion of the string `str` to an integer (`int`). 
+ * It skips any leading whitespace characters and then processes an optional sign character 
+ * (`+` or `-`). The function reads the digits from the string and forms the corresponding integer.
+ * If the resulting value exceeds the range of an `int`, the function returns `-1` for overflow 
+ * and `0` for underflow.
+ * 
+ * @param str The string to be converted to an integer.
+ * 
+ * @return The converted integer value. Returns `-1` if the value exceeds `INT_MAX` and `0` if 
+ *         the value is below `INT_MIN`.
+ */
 int	ft_atoi(const char *str)
 {
 	long	ret;

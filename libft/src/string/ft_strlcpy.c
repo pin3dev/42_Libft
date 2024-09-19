@@ -6,12 +6,26 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 22:23:17 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:53:49 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Copies a string to a destination buffer, ensuring null-termination and preventing overflow.
+ * 
+ * This function copies up to `size - 1` characters from the string `src` to the buffer `dest`,
+ * ensuring that the result is null-terminated if `size` is not 0.
+ * 
+ * @param dest The destination buffer where the string will be copied.
+ * @param src The source string to copy from.
+ * @param size The total size of the destination buffer.
+ * 
+ * @return The total length of the string `src`, regardless of how many characters were actually copied.
+ * 
+ * @note If `size` is 0, the function returns the length of `src` but does not copy anything.
+ */
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	index;

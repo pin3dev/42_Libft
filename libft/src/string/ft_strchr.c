@@ -6,12 +6,24 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 21:51:47 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 00:51:34 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
+/**
+ * @brief Locates the first occurrence of a character in a string.
+ * 
+ * This function scans the string `str` for the first occurrence of the character `c`.
+ * The search includes the terminating null byte (`\0`), meaning it can be used to find 
+ * both regular characters and the null terminator.
+ * 
+ * @param str The string to be scanned.
+ * @param c The character to locate, passed as an `int` but cast to `char`.
+ * 
+ * @return A pointer to the first occurrence of the character `c` in the string `str`, 
+ *         or `NULL` if the character is not found.
+ */
 char	*ft_strchr(const char *str, int c)
 {
 	while (*str != '\0')

@@ -6,12 +6,23 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/18 12:18:53 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/09/19 01:03:18 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
+/**
+ * @brief Writes an integer to a file descriptor.
+ * 
+ * This function writes the integer `n` to the specified file descriptor `fd`.
+ * It handles negative numbers by writing a minus sign before the digits.
+ * 
+ * @param n The integer to be written.
+ * @param fd The file descriptor where the integer will be written. If `fd` is invalid (negative), the function does nothing.
+ * 
+ * @return This function does not return any value.
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	nbr;
