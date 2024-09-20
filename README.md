@@ -24,6 +24,8 @@ These functions are divided into different subcategories, depending on their pur
 The primary categories are **Libc functions** (reimplementations of standard C library functions) and **Additional functions** (new utility functions added to complement the library).  
 Within these categories, the functions can be further grouped based on their operations on **strings**, **memory**, **utility** functions, and **linked lists**.
 
+## 🗃️ Documentation
+
 For detailed documentation, including usage examples and function breakdowns, please visit the [Libft Wiki](https://github.com/pin3dev/42_Libft/wiki). 
 
 ## 🫥 Cloning the Repository
