@@ -10,6 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
+## This Makefile was altered using *wildcards*, which are not allowed by 42's criteria and are considered cheating. 
+## Do not copy this code, use it as a reference for learning.
+
 NAME = libft.a
 
 ################################################################################
