@@ -27,7 +27,7 @@ Within these categories, the functions can be further grouped based on their ope
 ## 🗃️ Documentation
 
 For detailed documentation, including usage examples and function breakdowns, please visit the link below:
-<h3 align="center"><a href="https://github.com/pin3dev/42_Libft/wiki">Libft Wiki</a></h3>
+<h3 align="center"><a href="https://github.com/pin3dev/42_Libft/wiki">-----Libft Wiki-----</a></h3>
 
 ## 🫥 Cloning the Repository
 
@@ -75,5 +75,5 @@ This project strictly follows the [**42 School Norm**](https://github.com/pin3de
 
 All the theoretical material used to study and carry out this project is organized in the tags described at the beginning of this README.  
 In addition, these materials can be accessed directly via the link provided below.
-<h3 align="center"><a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Libft Theoretical</a></h3>
+<h3 align="center"><a href="https://github.com/pin3dev/42_Cursus/tree/main/library">-----Libft Theoretical-----</a></h3>
 
