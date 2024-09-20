@@ -26,7 +26,8 @@ Within these categories, the functions can be further grouped based on their ope
 
 ## 🗃️ Documentation
 
-For detailed documentation, including usage examples and function breakdowns, please visit the [Libft Wiki](https://github.com/pin3dev/42_Libft/wiki). 
+For detailed documentation, including usage examples and function breakdowns, please visit the link below:
+<h3 align="center"><a href="https://github.com/pin3dev/42_Libft/wiki">Libft Wiki</a></h3>
 
 ## 🫥 Cloning the Repository
 
