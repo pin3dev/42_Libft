@@ -1,14 +1,14 @@
 <h1 align="center">Libft</h1>
-<p align="center">
+<p align="center"> 📖
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Static Library</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Makefile</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Compilation Process</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Memory Management</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Arrays</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Linked Lists</a>
-</p>
+📖 </p>
 
-## ℹ️ Introduction
+## 🗣️ Introduction
 
 This repository contains a custom C library, **Libft**, implemented as part of a coding project.  
 
@@ -36,7 +36,7 @@ cd 42_Libft/libft
 ```
 This will download the project from GitHub into your current directory. Once inside the `libft` directory, you must run make to compile the library.  
 
-## ▶️ Compilation and Usage
+## 🕹️ Compilation and Usage
 
 ### Makefile
 
