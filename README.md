@@ -72,17 +72,8 @@ make test
 This project strictly follows the [**42 School Norm**](https://github.com/pin3dev/42_Cursus/blob/b9cd0fe844ddb441d0b3efb98abcee92aee49535/assets/General/norme.en.pdf) coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. 
 
 ## 📖 Theoretical Background
-| Grade |Lang | Type| Links and Subjects |
-|:---------:|:---:|:---:|--------------------|
-|⭐⭐| 🇺🇸 | 📄 |[1](https://medium.com/@meghamohan/all-about-static-libraries-in-c-cea57990c495)|  
-|⭐⭐| 🇺🇸 | 📄 |[2](https://www.linkedin.com/pulse/static-libraries-c-ignacio-chitnisky/)|  
-|⭐⭐| 🇺🇸 | 📄 |[3](https://dev.to/iamkhalil42/all-you-need-to-know-about-c-static-libraries-1o0b)|  
-|⭐⭐| 🇺🇸 | 📄 |[4](https://medium.com/@Miguel_Grillo/what-is-a-static-library-in-c-1a7502ca8f7d)|  
-|⭐⭐| 🇺🇸 | 📄 |[5](https://msoe.us/taylor/tutorial/ce2810/library.htm)|  
-|⭐⭐| 🇺🇸 | 📄 |[6](https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_C_libraries.html)|  
-|⭐⭐| 🇺🇸 | 📄 |[7](https://www.ibm.com/docs/en/zos/2.4.0?topic=descriptions-ar-create-maintain-library-archives)|  
-|⭐⭐| 🇺🇸 | 📄 |[8](https://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html)|  
 
-> ✅ OK | ⭐ Good | ⭐⭐ VeryGood | 🤩 Amazing | 🔖 Bookmarked2Read  
-> 📄 Blog | 💭 Chat | 📹 Video | 📚 Book_&_ScientificPapers
+All the theoretical material used to study and carry out this project is organized in the tags described at the beginning of this README.  
+In addition, these materials can be accessed directly via the link provided below.
+<h3 align="center"><a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Libft Theoretical</a></h3>
 
