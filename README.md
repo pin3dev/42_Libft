@@ -66,16 +66,7 @@ make test
 
 ## ⚠️ Norms and Guidelines Disclaimer
 
-This project strictly follows the [**42 School Norm**](https://github.com/pin3dev/42_Cursus/blob/b9cd0fe844ddb441d0b3efb98abcee92aee49535/assets/General/norme.en.pdf) coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. Some key constraints include:
-
-- The use of certain control structures like `for`, `switch`, and `goto` is forbidden.
-- Each function must not exceed **25 lines**, including opening and closing brackets.
-- A maximum of **4 parameters** is allowed per function.
-- **No global variables** are allowed, and function variables must be declared at the start of the function.
-- **Memory management** is critical, and no memory leaks or undefined behaviors (e.g., segmentation faults) are tolerated.
-- Code formatting is highly rigid, with specific rules for indentation, line length, and spacing.
-
-These restrictions are enforced to ensure standardized, readable code across all projects, even if it results in less flexibility or optimization.
+This project strictly follows the [**42 School Norm**](https://github.com/pin3dev/42_Cursus/blob/b9cd0fe844ddb441d0b3efb98abcee92aee49535/assets/General/norme.en.pdf) coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. 
 
 ## 📖 Theoretical Background
 | Grade |Lang | Type| Links and Subjects |
