@@ -2,9 +2,7 @@
 <p align="center"> 📖
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Static Library</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Makefile</a>• 
-<a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Compilation</a>
-</p>
-<p align="center">
+<a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Compilation</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Memory</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Arrays</a>• 
 <a href="https://github.com/pin3dev/42_Cursus/tree/main/library">Linked Lists</a>
