@@ -67,6 +67,22 @@ To compile the bonus part and test, use:
 make test
 ```
 
+### Basic Usage
+
+To use the **libft** library in your C code, follow the steps below:
+
+1. Include the header in your code:
+    ```c
+    #include "libft/inc/libft.h"
+    ```
+
+2. Compile your code with the library:
+    ```bash
+    gcc -Wall -Wextra -Werror my_program.c libft/libft.a -o exe_my_program
+    ```
+
+3. You can now use any `libft` function in your program now!
+
 ## ⚠️ Norms and Guidelines Disclaimer
 
 This project strictly follows the [**42 School Norm**](https://github.com/pin3dev/42_Cursus/blob/b9cd0fe844ddb441d0b3efb98abcee92aee49535/assets/General/norme.en.pdf) coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. 
