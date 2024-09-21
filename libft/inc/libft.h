@@ -81,6 +81,7 @@ typedef struct s_list
 	struct s_list	*next; /**< Pointer to the next node in the list. */
 }					t_list;
 
+/* Additonal Lists */
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
