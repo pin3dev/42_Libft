@@ -1,6 +1,6 @@
 <h1 align="center">Libft</h1>
 <p align="center"> 
-  <img src="https://img.shields.io/badge/125-125-gray?style=for-the-badge&logo=42&labelColor=yellow"/>
+  <img src="https://img.shields.io/badge/grade-125-yellow?style=for-the-badge&logo=42&labelColor=gray"/>
 </p>
 
 <p align="center"> 
