@@ -1,12 +1,30 @@
 <h1 align="center">Libft</h1>
-<p align="center"> 📖
-<a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">Static Library</a>• 
-<a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">Makefile</a>• 
-<a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">Compilation</a>• 
-<a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">Memory</a>• 
-<a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">Arrays</a>• 
-<a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">Linked Lists</a>
-📖 </p>
+<p align="center"> 
+  <img src="https://img.shields.io/badge/125-125-gray?style=for-the-badge&logo=42&labelColor=yellow"/>
+</p>
+
+<p align="center"> 
+  <a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">
+    <img src="https://img.shields.io/badge/Static_Library-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Makefile-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Compilation-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Memory-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Arrays-blue?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Linked_List-blue?style=for-the-badge"/>
+  </a>
+</p>
+
+<h3>
+  <p align="center"> 
+    <a href="https://github.com/pin3dev/42_Libft/#introduction">Introduction</a> • 
+    <a href="https://github.com/pin3dev/42_Libft/#project-structure">Structure</a> • 
+    <a href="https://github.com/pin3dev/42_Libft/#documentation">Docs</a> • 
+    <a href="https://github.com/pin3dev/42_Libft/#cloning-the-repository">Cloning</a> • 
+    <a href="https://github.com/pin3dev/42_Libft/#compilation-and-usage">Usage</a> • 
+    <a href="https://github.com/pin3dev/42_Libft/#norms-and-guidelines-disclaimer">Norms</a> • 
+    <a href="https://github.com/pin3dev/42_Libft/#theoretical-background">Theoretical</a>  
+  </p>
+</h3>
 
 ## 🗣️ Introduction
 
