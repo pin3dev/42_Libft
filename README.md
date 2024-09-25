@@ -55,7 +55,7 @@ To clone this repository and compile the project, run the following commands:
 git clone https://github.com/pin3dev/42_Libft.git
 cd 42_Libft/libft
 ```
-This will download the project from GitHub into your current directory. Once inside the `libft` directory, you must run make to compile the library.  
+This will download the project from GitHub into your local machine in current directory. Once inside the `libft` directory, you must run make to compile the library.  
 
 ## 🕹️ Compilation and Usage <a id="usage"></a>
 
