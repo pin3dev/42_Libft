@@ -16,17 +16,17 @@
 
 <h3>
   <p align="center"> 
-    <a href="https://github.com/pin3dev/42_Libft/#introduction">Introduction</a> • 
-    <a href="https://github.com/pin3dev/42_Libft/#project-structure">Structure</a> • 
-    <a href="https://github.com/pin3dev/42_Libft/#documentation">Docs</a> • 
-    <a href="https://github.com/pin3dev/42_Libft/#cloning-the-repository">Cloning</a> • 
-    <a href="https://github.com/pin3dev/42_Libft/#compilation-and-usage">Usage</a> • 
-    <a href="https://github.com/pin3dev/42_Libft/#norms-and-guidelines-disclaimer">Norms</a> • 
-    <a href="https://github.com/pin3dev/42_Libft/#theoretical-background">Theoretical</a>  
+    <a href="#introduction">Introduction</a> • 
+    <a href="#structure">Structure</a> • 
+    <a href="#docs">Docs</a> • 
+    <a href="#cloning">Cloning</a> • 
+    <a href="#usage">Usage</a> • 
+    <a href="#norms">Norms</a> • 
+    <a href="#theoretical">Theoretical</a>   
   </p>
 </h3>
 
-## 🗣️ Introduction
+## 🗣️ Introduction <a id="introduction"></a>
 
 This repository contains a custom C library, **Libft**, implemented as part of a coding project.  
 
@@ -35,19 +35,19 @@ The objective of the project is to create a **static library** (`.a` file) in C 
 A static library is a collection of object files that are linked directly into the final executable at compile time.  
 The goal is to gain a deeper understanding of how these functions work internally and to provide a versatile library that can be reused in future C projects without relying on external dependencies.  
 
-## 🧬 Project Structure
+## 🧬 Project Structure <a id="structure"></a>
 
 The mandatory part of the project involves reimplementing several standard C library functions.  
 These functions are divided into different subcategories, depending on their purpose.  
 The primary categories are **Libc functions** (reimplementations of standard C library functions) and **Additional functions** (new utility functions added to complement the library).  
 Within these categories, the functions can be further grouped based on their operations on **strings**, **memory**, **utility** functions, and **linked lists**.
 
-## 🗃️ Documentation
+## 🗃️ Documentation <a id="docs"></a>
 
 For detailed documentation, including usage examples and function breakdowns, please visit the link below:
 <h3 align="center"><a href="https://github.com/pin3dev/42_Libft/wiki">-----Libft Wiki-----</a></h3>
 
-## 🫥 Cloning the Repository
+## 🫥 Cloning the Repository <a id="cloning"></a>
 
 To clone this repository and compile the project, run the following commands:
 
@@ -57,7 +57,7 @@ cd 42_Libft/libft
 ```
 This will download the project from GitHub into your current directory. Once inside the `libft` directory, you must run make to compile the library.  
 
-## 🕹️ Compilation and Usage
+## 🕹️ Compilation and Usage <a id="usage"></a>
 
 ### Makefile
 
@@ -101,11 +101,11 @@ To use the **libft** library in your C code, follow the steps below:
 
 3. You can now use any `libft` function in your program now!
 
-## ⚠️ Norms and Guidelines Disclaimer
+## ⚠️ Norms and Guidelines Disclaimer <a id="norms"></a>
 
 This project strictly follows the [**42 School Norm**](https://github.com/pin3dev/42_Cursus/blob/b9cd0fe844ddb441d0b3efb98abcee92aee49535/assets/General/norme.en.pdf) coding guidelines, which significantly influenced certain decisions in its implementation. These rules may sometimes lead to seemingly inefficient or unusual solutions, but they were necessary to meet the strict requirements of the school. 
 
-## 📖 Theoretical Background
+## 📖 Theoretical Background <a id="theoretical"></a>
 
 All the theoretical material used to study and carry out this project is organized in the tags described at the beginning of this README.  
 In addition, these materials can be accessed directly via the link provided below.
