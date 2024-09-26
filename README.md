@@ -79,7 +79,7 @@ To compile the library, simply run:
 ```bash
 make
 ```
-This will generate the libft.a library, which can be linked in other projects to use all functions.
+This will generate the `libft.a` library, which can be linked in other projects to use all functions.
 
 <!--
 To compile the bonus part, use:
