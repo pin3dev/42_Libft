@@ -115,8 +115,7 @@ This project strictly follows the [**42 School Norm**](https://github.com/pin3de
 
 ## 📖 Theoretical Background <a id="theoretical"></a>
 
-All the theoretical material used to study and carry out this project is organized in the tags described at the beginning of this README.  
-In addition, these materials can be accessed directly via the link provided below.
+All the theoretical material used to develop this project is organized and can be accessed directly via the link below:  
 
 <p align="center"> 
   <a href="https://github.com/pin3dev/42_Cursus/tree/main/library/#00-Libft">
