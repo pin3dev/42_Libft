@@ -104,7 +104,7 @@ To use the **libft** library in your C code, follow the steps below:
 
 2. Compile your code with the library:
     ```bash
-    gcc -Wall -Wextra -Werror my_program.c libft/libft.a -o exe_my_program
+    gcc -Wall -Wextra -Werror -o your_exec your_code.c 42_Libft/libft/libft.a
     ```
 
 3. You can now use any `libft` function in your program now!
