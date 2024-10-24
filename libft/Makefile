@@ -6,11 +6,26 @@
 #    By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 13:11:36 by pin3dev           #+#    #+#              #
-#    Updated: 2024/10/24 20:17:13 by pin3dev          ###   ########.fr        #
+#    Updated: 2024/10/24 21:23:31 by pin3dev          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ## Do not copy this code, use it as a reference for learning.
+
+################################################################################
+# 									Graphic	 	 							   #
+################################################################################
+
+RED=\033[0;31m
+GREEN=\033[0;32m
+RESET=\033[0m
+BKGRAY=\033[47;90m
+BKGRAYGREEN=\033[1;92m
+BKGRAYRED=\033[1;91m
+
+################################################################################
+# 									Executable	 	 						   #
+################################################################################
 
 NAME = libft.a
 
@@ -68,11 +83,11 @@ bonus: $(OBJS_BONUS) $(NAME)
 clean:
 	@$(RM) $(OBJS_MAND) $(OBJS_BONUS) 
 	@if [ -d "$(OBJ_DIR)" ]; then $(RMD) $(OBJ_DIR); fi
-	@echo "Object files removed"
+	@echo "${BKGRAY}Libft:${BKGRAYRED}- Obj${RESET}"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@echo "$(NAME) removed"
+	@echo "${BKGRAY}Libft: ${BKGRAYRED}- Exec${RESET}"
 #	@if [ -d "../libft-unit-tests" ]; then cd ../libft-unit-tests && make fclean; fi
 #	@if [ -d "../libft-unit-tests" ]; then $(RMD) "../libft-unit-tests"; fi
 
@@ -114,34 +129,22 @@ $(OBJ_DIR)/%.o: $(SRC_LIST_DIR)/%.c | $(OBJ_DIR)
 #	@echo "Compiling $(notdir $<) from dir <$(SRC_LIST_DIR)>"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
+
 $(NAME): $(OBJS_MAND)
-	@LINK_CMD="";
-	@if ls $(OBJS_BONUS) >/dev/null 2>&1; then \
+	@LINK_CMD=""; \
+	VAR=""; \
+	\
+	if ls $(OBJS_BONUS) >/dev/null 2>&1; then \
 		LINK_CMD="$(AR) $(NAME) $(OBJS_MAND) $(OBJS_BONUS)"; \
+		VAR="Libft Bonus"; \
 	else \
 		LINK_CMD="$(AR) $(NAME) $(OBJS_MAND)"; \
+		VAR="Libft"; \
 	fi; \
-	$$LINK_CMD & 
-	./graphic_loading.sh "Libft" 
+	\
+	$$LINK_CMD & \
+	./gui_load.sh "$$VAR" # Exibishion of the loading bar
 	@wait
-
-################################################################################
-# 									Graphic	 	 							   #
-################################################################################
-
-
-# Exibishion of the loading bar
-# ./graphic_loading.sh
-
-# old version
-#$(NAME): $(OBJS_MAND) 
-#	@if ls $(OBJS_BONUS) >/dev/null 2>&1; then \
-#		echo "Linking Mandatory and Bonus Libraries into $(NAME)"; \
-#		$(AR) $(NAME) $(OBJS_MAND) $(OBJS_BONUS); \
-#	else \
-#		echo "Linking only Mandatory Library into $(NAME)"; \
-#		$(AR) $(NAME) $(OBJS_MAND); \
-#	fi
 
 ################################################################################
 # 										PS		 	 						   #

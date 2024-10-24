@@ -5,8 +5,17 @@ GREEN='\033[0;32m'   # Green
 RESET='\033[0m'      # No color / reset
 BKGRAY='\033[47;90m' # Background Gray
 BKGRAYGREEN='\033[1;92m' # Background Gray and Green
+BKGRAYRED='\033[1;91m' # Background Gray and Red
 
 var=${1:-"Makefile"}
+
+handle_error_signal()
+{
+    echo -e "\n${BKGRAY}${var}:${BKGRAYRED}KO!${RESET}"
+    exit 1
+}
+
+trap 'handle_error_signal' SIGUSR1
 
 var_len=${#var}
 extra_chars=$((var_len + 12))
@@ -40,7 +49,7 @@ while [ $i -le 100 ]; do
     printf "[%-*s] %3d%%" "$bar_width" "$bar" "$i"
 
     sleep 0.1  # Sleep for 0.1 seconds
-    i=$((i+2))  # Update counter
+    i=$((i+10))  # Update counter
 done
 echo -e "\n${BKGRAY}${var}:${BKGRAYGREEN}OK!${RESET}"
 
