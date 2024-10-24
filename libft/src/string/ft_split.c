@@ -6,11 +6,11 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/19 00:50:35 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/10/24 17:42:26 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/libft.h"
+#include "libft.h"
 
 /**
  * @brief Counts the number of words in a string separated by a delimiter.

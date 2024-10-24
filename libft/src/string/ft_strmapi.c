@@ -6,11 +6,11 @@
 /*   By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: Invalid date        by ivbatist          #+#    #+#             */
-/*   Updated: 2024/09/19 00:54:33 by pin3dev          ###   ########.fr       */
+/*   Updated: 2024/10/24 17:42:26 by pin3dev          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/libft.h"
+#include "libft.h"
 
 /**
  * @brief Applies a function to each character of a string to create a new string.

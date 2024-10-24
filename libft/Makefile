@@ -6,11 +6,10 @@
 #    By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 13:11:36 by pin3dev           #+#    #+#              #
-#    Updated: 2024/09/18 23:32:56 by pin3dev          ###   ########.fr        #
+#    Updated: 2024/10/24 19:58:14 by pin3dev          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-## This Makefile was altered using *wildcards*, which are not allowed by 42's criteria and are considered cheating. 
 ## Do not copy this code, use it as a reference for learning.
 
 NAME = libft.a
@@ -74,22 +73,22 @@ clean:
 fclean: clean
 	@$(RM) $(NAME)
 	@echo "$(NAME) removed"
-	@if [ -d "../libft-unit-tests" ]; then cd ../libft-unit-tests && make fclean; fi
-	@if [ -d "../libft-unit-tests" ]; then $(RMD) "../libft-unit-tests"; fi
+#	@if [ -d "../libft-unit-tests" ]; then cd ../libft-unit-tests && make fclean; fi
+#	@if [ -d "../libft-unit-tests" ]; then $(RMD) "../libft-unit-tests"; fi
 
 re: fclean all
 
 ################################################################################
-# 						Test Targets by @alelievr	 						   #
+# 						 Targets Test by @alelievr	 						   #
 ################################################################################
 
-test: bonus
-	@if [ ! -d "../libft-unit-tests" ]; then \
-		git clone https://github.com/alelievr/libft-unit-test ../libft-unit-tests; \
-	else \
-		cd ../libft-unit-tests && git pull; \
-	fi
-	@cd ../libft-unit-tests && make && sleep 5 && ./run_test
+#test: bonus
+#	@if [ ! -d "../libft-unit-tests" ]; then \
+#		git clone https://github.com/alelievr/libft-unit-test ../libft-unit-tests; \
+#	else \
+#		cd ../libft-unit-tests && git pull; \
+#	fi
+#	@cd ../libft-unit-tests && make && sleep 5 && ./run_test
 
 
 ################################################################################
@@ -100,30 +99,50 @@ $(OBJ_DIR):
 	@mkdir -p $(OBJ_DIR)
 
 $(OBJ_DIR)/%.o: $(SRC_STRING_DIR)/%.c | $(OBJ_DIR)
-	@echo "Compiling $(notdir $<) from dir <$(SRC_STRING_DIR)>"
+#	@echo "Compiling $(notdir $<) from dir <$(SRC_STRING_DIR)>"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/%.o: $(SRC_MEMORY_DIR)/%.c | $(OBJ_DIR)
-	@echo "Compiling $(notdir $<) from dir <$(SRC_MEMORY_DIR)>"
+#	@echo "Compiling $(notdir $<) from dir <$(SRC_MEMORY_DIR)>"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/%.o: $(SRC_UTIL_DIR)/%.c | $(OBJ_DIR)
-	@echo "Compiling $(notdir $<) from dir <$(SRC_UTIL_DIR)>"
+#	@echo "Compiling $(notdir $<) from dir <$(SRC_UTIL_DIR)>"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/%.o: $(SRC_LIST_DIR)/%.c | $(OBJ_DIR)
-	@echo "Compiling $(notdir $<) from dir <$(SRC_LIST_DIR)>"
+#	@echo "Compiling $(notdir $<) from dir <$(SRC_LIST_DIR)>"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
-$(NAME): $(OBJS_MAND) 
+$(NAME): $(OBJS_MAND)
+	@LINK_CMD="";
 	@if ls $(OBJS_BONUS) >/dev/null 2>&1; then \
-		echo "Linking Mandatory and Bonus Libraries into $(NAME)"; \
-		$(AR) $(NAME) $(OBJS_MAND) $(OBJS_BONUS); \
+		LINK_CMD="$(AR) $(NAME) $(OBJS_MAND) $(OBJS_BONUS)"; \
 	else \
-		echo "Linking only Mandatory Library into $(NAME)"; \
-		$(AR) $(NAME) $(OBJS_MAND); \
-	fi
-	
+		LINK_CMD="$(AR) $(NAME) $(OBJS_MAND)"; \
+	fi; \
+	$$LINK_CMD & 
+	./graphic_loading.sh 
+	@wait
+
+################################################################################
+# 									Graphic	 	 							   #
+################################################################################
+
+
+# Exibishion of the loading bar
+# ./graphic_loading.sh
+
+# old version
+#$(NAME): $(OBJS_MAND) 
+#	@if ls $(OBJS_BONUS) >/dev/null 2>&1; then \
+#		echo "Linking Mandatory and Bonus Libraries into $(NAME)"; \
+#		$(AR) $(NAME) $(OBJS_MAND) $(OBJS_BONUS); \
+#	else \
+#		echo "Linking only Mandatory Library into $(NAME)"; \
+#		$(AR) $(NAME) $(OBJS_MAND); \
+#	fi
+
 ################################################################################
 # 										PS		 	 						   #
 ################################################################################
