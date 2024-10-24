@@ -6,7 +6,7 @@
 #    By: pin3dev <pinedev@outlook.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 13:11:36 by pin3dev           #+#    #+#              #
-#    Updated: 2024/10/24 19:58:14 by pin3dev          ###   ########.fr        #
+#    Updated: 2024/10/24 20:17:13 by pin3dev          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -122,7 +122,7 @@ $(NAME): $(OBJS_MAND)
 		LINK_CMD="$(AR) $(NAME) $(OBJS_MAND)"; \
 	fi; \
 	$$LINK_CMD & 
-	./graphic_loading.sh 
+	./graphic_loading.sh "Libft" 
 	@wait
 
 ################################################################################

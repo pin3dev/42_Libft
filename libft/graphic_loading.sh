@@ -6,15 +6,20 @@ RESET='\033[0m'      # No color / reset
 BKGRAY='\033[47;90m' # Background Gray
 BKGRAYGREEN='\033[1;92m' # Background Gray and Green
 
+var=${1:-"Makefile"}
+
+var_len=${#var}
+extra_chars=$((var_len + 12))
+
 i=0  # Counter
 while [ $i -le 100 ]; do
     tput clear  # Clear screen
     
-    echo -en "${BKGRAY}Libft:${RESET}"
+    echo -en "${BKGRAY}${var}:${RESET}"
     cols=$(tput cols) # Get the number of columns in the terminal
     rounded_cols=$((cols / 2 * 2)) # Round down to the nearest even number
 
-    bar_width=$((rounded_cols - 17)) # Calculate the width of the progress bar
+    bar_width=$((rounded_cols - extra_chars)) # Calculate the width of the progress bar
 
     # Garantee that the bar width is at least 1
     if [ $bar_width -lt 1 ]; then
@@ -37,6 +42,6 @@ while [ $i -le 100 ]; do
     sleep 0.1  # Sleep for 0.1 seconds
     i=$((i+2))  # Update counter
 done
-echo -e "\n${BKGRAY}Libft:${BKGRAYGREEN}OK!${RESET}"
+echo -e "\n${BKGRAY}${var}:${BKGRAYGREEN}OK!${RESET}"
 
 
